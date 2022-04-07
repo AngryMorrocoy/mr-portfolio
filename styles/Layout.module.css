@@ -1,0 +1,7 @@
+.bodyContainer {
+  padding: 1rem;
+}
+
+.bodyContainer > * {
+  margin: 4rem 0;
+}
