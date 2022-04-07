@@ -1,0 +1,59 @@
+/* Containers and separators */
+
+.aboutSection {
+  --padding-size: 2rem;
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding: var(--padding-size);
+  margin-top: 10rem;
+}
+
+.topSeparators {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+  transform: translateY(calc(-50% - var(--padding-size)));
+}
+
+.barSeparator {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+}
+
+.botSeparators {
+  transform: translateY(calc(50% + var(--padding-size)));
+  display: grid;
+  grid-template-columns: 70%;
+  justify-items: end;
+}
+
+/* Actual info */
+
+.aboutSection > h2 {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: calc(-5.5 * var(--padding-size));
+}
+
+.aboutSection__info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  align-items: center;
+  justify-items: center;
+  gap: 5rem;
+
+  padding: var(--padding-size);
+  margin: 5rem;
+  margin-bottom: -6rem;
+
+  position: relative;
+}
+
+.aboutSection__info p {
+  color: white;
+  font-size: 2.25rem;
+  line-height: 1.4;
+}

@@ -1,0 +1,10 @@
+.lineSeparator {
+  position: relative;
+}
+
+.lineSeparator::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: var(--separator-color);
+}
