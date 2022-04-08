@@ -29,18 +29,17 @@ const AboutSection: FunctionComponent<AboutSectionProps> = ({
             Engineering.
           </p>
         </div>
+        <LineSeparator
+          width=".3rem"
+          height="23rem"
+          color="var(--main-color)"
+        />
 
         <p>
           On my journey I've learned some languages like python and the orion
           belt of web development: <i>HTML, CSS and Javascript</i>. Working with
           the last one in both, the frontend and the backend using nodeJS.
         </p>
-        <LineSeparator
-          width=".3rem"
-          height="23rem"
-          color="var(--main-color)"
-          className={styles.barSeparator}
-        />
       </div>
       <div className={styles.botSeparators}>
         <TriangleSeparator />

@@ -15,12 +15,6 @@
   transform: translateY(calc(-50% - var(--padding-size)));
 }
 
-.barSeparator {
-  position: absolute;
-  left: 50%;
-  right: 50%;
-}
-
 .botSeparators {
   transform: translateY(calc(50% + var(--padding-size)));
   display: grid;
@@ -39,7 +33,7 @@
 
 .aboutSection__info {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr auto 1fr;
 
   align-items: center;
   justify-items: center;
