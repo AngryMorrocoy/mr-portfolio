@@ -1,0 +1,16 @@
+.projectsSection {
+  margin-top: 13rem;
+}
+
+.projectsContainer {
+  padding: 4rem;
+  display: grid;
+  gap: 7rem;
+}
+
+.cardLeft {
+  justify-self: start;
+}
+.cardRight {
+  justify-self: end;
+}

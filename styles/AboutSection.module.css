@@ -24,13 +24,6 @@
 
 /* Actual info */
 
-.aboutSection > h2 {
-  color: white;
-  font-size: 4rem;
-  text-align: center;
-  margin-top: calc(-5.5 * var(--padding-size));
-}
-
 .aboutSection__info {
   display: grid;
   grid-template-columns: 1fr auto 1fr;

@@ -1,0 +1,35 @@
+.projectCard {
+  position: relative;
+  width: 80%;
+}
+
+/* --- */
+
+.image {
+  height: 300px;
+  background-color: #d43838;
+}
+
+.badge {
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+  /* max-width: 25ch; */
+  padding: 1rem 4rem;
+
+  position: absolute;
+}
+
+.badge.right {
+  border-radius: 0 0 0 4rem;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.badge.left {
+  border-radius: 0 0 4rem 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}

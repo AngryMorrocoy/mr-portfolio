@@ -1,7 +1,7 @@
 :root {
   --bg-color: #1f1f1f;
-  --main-color: #F4ABF3;
-  --secondary-color: #29314F;
+  --main-color: #f4abf3;
+  --secondary-color: #29314f;
 }
 
 html,
@@ -20,4 +20,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.section-title {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: calc(-5.5 * var(--padding-size));
 }

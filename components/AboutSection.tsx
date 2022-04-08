@@ -1,7 +1,7 @@
 import { FunctionComponent } from 'react';
 import styles from '../styles/AboutSection.module.css';
 import LineSeparator from './LineSeparator';
-import TriangleSeparator from './Separator';
+import TriangleSeparator from './TriangleSeparator';
 
 type AboutSectionProps = {
   id?: string;
@@ -16,7 +16,7 @@ const AboutSection: FunctionComponent<AboutSectionProps> = ({
         <TriangleSeparator reversed />
         <TriangleSeparator reversed />
       </div>
-      <h2>About Me</h2>
+      <h2 className="section-title">About Me</h2>
 
       <div className={styles.aboutSection__info}>
         <div>
@@ -29,11 +29,7 @@ const AboutSection: FunctionComponent<AboutSectionProps> = ({
             Engineering.
           </p>
         </div>
-        <LineSeparator
-          width=".3rem"
-          height="23rem"
-          color="var(--main-color)"
-        />
+        <LineSeparator width=".3rem" height="23rem" color="var(--main-color)" />
 
         <p>
           On my journey I've learned some languages like python and the orion

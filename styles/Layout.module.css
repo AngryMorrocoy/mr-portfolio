@@ -1,5 +1,6 @@
 .bodyContainer {
   padding: 0;
+  padding-bottom: 4rem;
 }
 
 .bodyContainer > * {
