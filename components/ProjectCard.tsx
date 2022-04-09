@@ -20,7 +20,7 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({
   return (
     <div className={`${styles.projectCard} ${className}`}>
       <a href={href} target="_blank">
-        <div className={styles.image}>
+        <div className={styles.imageContainer}>
           <Image src={image} layout="fill" />
         </div>
         <span className={`${styles.badge} ${styles[aligned]}`}>

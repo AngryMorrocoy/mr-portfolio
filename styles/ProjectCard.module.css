@@ -11,18 +11,19 @@
   cursor: pointer;
 }
 
-.projectCard:hover .image::after {
+.projectCard:hover .imageContainer::after {
   transition: opacity 300ms ease-in;
   opacity: 0.3;
 }
 
 /* --- */
 
-.image {
+.imageContainer {
   height: 300px;
+  position: relative;
 }
 
-.image::after {
+.imageContainer::after {
   content: '';
   position: absolute;
   inset: 0;

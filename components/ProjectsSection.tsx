@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import { FunctionComponent, Fragment } from 'react';
 import styles from '../styles/ProjectsSection.module.css';
 import ProjectCard from './ProjectCard';
 import projectObjects from '../mock/projects';
@@ -17,23 +17,24 @@ const ProjectsSection: FunctionComponent<ProjectsSectionProps> = ({
       <div className={styles.projectsContainer}>
         {projectObjects.map((cardProps, idx, array) => {
           const isEvenChild = idx % 2 == 0;
+          const shouldAddSeparator = array.length - 1 !== idx;
           return (
-            <>
+            <Fragment key={idx}>
               <ProjectCard
                 {...cardProps}
                 aligned={isEvenChild ? 'left' : 'right'}
                 className={isEvenChild ? styles.cardLeft : styles.cardRight}
-                key={idx}
               />
-              {array.length - 1 !== idx && (
+              {shouldAddSeparator && (
                 <LineSeparator
                   className={styles.gridBarSeparator}
                   color="var(--main-color)"
                   width="50%"
                   height=".5rem"
+                  key={array.length + idx}
                 />
               )}
-            </>
+            </Fragment>
           );
         })}
       </div>

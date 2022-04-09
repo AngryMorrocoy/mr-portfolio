@@ -16,12 +16,34 @@
   padding: 2rem 0;
 }
 
-.navbar > li {
+.navLink {
   list-style: none;
   color: white;
   font-size: 1.75rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.navbar > li:hover {
+.navLink::after {
+  transition: bottom 100ms ease-in-out;
+
+  --height: 0.15rem;
+  left: 0;
+  right: 0;
+  bottom: calc(-1 * var(--height));
+
+  content: '';
+  position: absolute;
+
+  height: var(--height);
+
+  background-color: var(--main-color);
+}
+
+.navLink:hover::after {
+  bottom: 0;
+}
+
+.navLink:hover {
   cursor: pointer;
 }

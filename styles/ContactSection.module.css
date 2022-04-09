@@ -1,0 +1,13 @@
+.contactSection {
+  --padding-size: 2rem;
+  background-color: var(--secondary-color);
+  margin-top: 12rem;
+  padding: var(--padding-size);
+}
+
+.separators {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-items: center;
+  transform: translateY(calc(-50% - var(--padding-size)))
+}

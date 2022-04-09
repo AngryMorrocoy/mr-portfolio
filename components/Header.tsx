@@ -9,7 +9,11 @@ const Navbar: FunctionComponent<any> = ({}): JSX.Element => {
       <nav>
         <ul className={styles.navbar}>
           {navLinksText.map((navText, idx) => {
-            return <li key={idx}>{navText}</li>;
+            return (
+              <li className={styles.navLink} key={idx}>
+                {navText}
+              </li>
+            );
           })}
         </ul>
       </nav>
