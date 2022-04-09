@@ -1,23 +1,32 @@
+import Image, { StaticImageData } from 'next/image';
 import { FunctionComponent } from 'react';
 import styles from '../styles/ProjectCard.module.css';
 
 export type ProjectCardProps = {
   aligned?: 'left' | 'right';
   className?: string;
-  imageUrl: string;
+  href: string;
+  image: string | StaticImageData;
   badgeText: string;
 };
 
 const ProjectCard: FunctionComponent<ProjectCardProps> = ({
   aligned = 'left',
-  imageUrl,
+  href,
+  image,
   badgeText,
   className,
 }): JSX.Element => {
   return (
     <div className={`${styles.projectCard} ${className}`}>
-      <div className={styles.image}></div>
-      <span className={`${styles.badge} ${styles[aligned]}`}>{badgeText}</span>
+      <a href={href} target="_blank">
+        <div className={styles.image}>
+          <Image src={image} layout="fill" />
+        </div>
+        <span className={`${styles.badge} ${styles[aligned]}`}>
+          {badgeText}
+        </span>
+      </a>
     </div>
   );
 };

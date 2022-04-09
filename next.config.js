@@ -5,4 +5,7 @@ module.exports = {
     locales: ['en'],
     defaultLocale: 'en',
   },
+  images: {
+    domains: ['encrypted-tbn0.gstatic.com'],
+  },
 };

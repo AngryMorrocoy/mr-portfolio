@@ -14,3 +14,15 @@
 .cardRight {
   justify-self: end;
 }
+
+.gridBarSeparator {
+  justify-self: center;
+}
+
+@media screen and (max-width: 800px) {
+  .cardLeft,
+  .cardRight {
+    justify-self: center;
+  }
+}
+

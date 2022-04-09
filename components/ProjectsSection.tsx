@@ -1,6 +1,8 @@
 import { FunctionComponent } from 'react';
 import styles from '../styles/ProjectsSection.module.css';
-import ProjectCard, { ProjectCardProps } from './ProjectCard';
+import ProjectCard from './ProjectCard';
+import projectObjects from '../mock/projects';
+import LineSeparator from './LineSeparator';
 
 type ProjectsSectionProps = {
   id?: string;
@@ -9,24 +11,29 @@ type ProjectsSectionProps = {
 const ProjectsSection: FunctionComponent<ProjectsSectionProps> = ({
   id = '',
 }): JSX.Element => {
-  const projectObjects: ProjectCardProps[] = [
-    { imageUrl: 'wu', badgeText: 'Frontend Mentor Blogr Landing Page' },
-    { imageUrl: 'u', badgeText: 'Javascript Made Calculator' },
-  ];
-
   return (
     <div id={id} className={styles.projectsSection}>
       <h2 className="section-title">Projects</h2>
       <div className={styles.projectsContainer}>
-        {projectObjects.map((cardProps, idx) => {
-          const isLeft = idx % 2 == 0;
+        {projectObjects.map((cardProps, idx, array) => {
+          const isEvenChild = idx % 2 == 0;
           return (
-            <ProjectCard
-              {...cardProps}
-              aligned={isLeft ? 'left' : 'right'}
-              className={isLeft ? styles.cardLeft : styles.cardRight}
-              key={idx}
-            />
+            <>
+              <ProjectCard
+                {...cardProps}
+                aligned={isEvenChild ? 'left' : 'right'}
+                className={isEvenChild ? styles.cardLeft : styles.cardRight}
+                key={idx}
+              />
+              {array.length - 1 !== idx && (
+                <LineSeparator
+                  className={styles.gridBarSeparator}
+                  color="var(--main-color)"
+                  width="50%"
+                  height=".5rem"
+                />
+              )}
+            </>
           );
         })}
       </div>
