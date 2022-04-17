@@ -1,0 +1,32 @@
+.inputContainer {
+  flex-direction: column;
+  --font-size: 1.45rem;
+  display: grid;
+}
+
+.label {
+  padding: .75em 1em;
+  font-size: var(--font-size);
+  background-color: white;
+  border-radius: 1.75rem 1.75rem 0 0;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.input {
+
+  outline: none;
+
+  font-size: var(--font-size);
+  border: none;
+  border-radius: 0 0 2rem 2rem;
+  padding: 1em;
+
+  box-shadow: inset 0px 0.25rem 0.5rem 0.3rem rgba(0, 0, 0, 0.25);
+  margin: 0;
+  width: 100%;
+}
+
+.input:focus {
+  box-shadow: inset 0px 0.25rem 0.5rem 0.3rem var(--main-color);
+}
