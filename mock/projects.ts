@@ -14,11 +14,11 @@ const projects: ProjectCardProps[] = [
     badgeText: 'Calculator - Frontend Mentor',
     href: 'https://mr-calculatorapp.netlify.app/',
   },
-    {
-      image: dolarVisualizerImage,
-      badgeText: 'Dolar Price Visualizer',
-      href: 'https://www.google.com/search?client=firefox-b-d&q=heroku'
-    }
+  {
+    image: dolarVisualizerImage,
+    badgeText: 'Dolar Price Visualizer',
+    href: 'https://dolar-visualizer.herokuapp.com/',
+  },
 ];
 
 export default projects;

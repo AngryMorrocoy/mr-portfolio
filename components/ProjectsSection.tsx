@@ -31,7 +31,6 @@ const ProjectsSection: FunctionComponent<ProjectsSectionProps> = ({
                   color="var(--main-color)"
                   width="50%"
                   height=".5rem"
-                  key={array.length + idx}
                 />
               )}
             </Fragment>
