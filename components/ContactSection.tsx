@@ -1,7 +1,9 @@
 import { FunctionComponent } from 'react';
 import styles from '../styles/ContactSection.module.css';
-import TextInput from './TextInput';
+import ContactForm from './ContactForm';
 import TriangleSeparator from './TriangleSeparator';
+import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa/';
+import SocialGrid from './SocialGrid';
 
 type ContactSectionProps = {
   id?: string;
@@ -18,22 +20,8 @@ const ContactSection: FunctionComponent<ContactSectionProps> = ({
       </div>
       <h2 className="section-title">Contact Me :D</h2>
       <div className={styles.contactGrid}>
-        <form
-          className={styles.formContainer}
-          onSubmit={(evt) => {
-            evt.preventDefault();
-          }}
-        >
-          <TextInput id="name" labelText="Name" />
-          <TextInput id="email" labelText="E-mail" inputType="email" />
-          <TextInput
-            id="message"
-            labelText="Message"
-            multiLine
-            inputLines={5}
-          />
-          <input type="submit" value="Send Message" className={styles.formButton} />
-        </form>
+        <ContactForm />
+        <SocialGrid />
       </div>
     </div>
   );

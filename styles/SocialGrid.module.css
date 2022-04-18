@@ -1,0 +1,33 @@
+.socialGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.iconContainer {
+  box-sizing: content-box;
+  background-color: var(--main-color);
+  padding: 3em;
+  border-radius: 100%;
+}
+
+.iconContainer > * {
+  --size: 5rem;
+  width: var(--size);
+  height: var(--size);
+
+  color: var(--secondary-color);
+}
+
+.iconContainer:hover,
+.iconContainer:focus {
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+
+.iconContainer:hover > *,
+.iconContainer:focus > * {
+  color: var(--main-color);
+}
