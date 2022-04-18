@@ -31,3 +31,14 @@
 .iconContainer:focus > * {
   color: var(--main-color);
 }
+
+@media screen and (max-width: 600px) {
+  .socialGrid {
+    flex-direction: row;
+  }
+
+  .iconContainer > * {
+    --size: 2rem;
+    color: var(--secondary-color);
+  }
+}

@@ -2,7 +2,6 @@ import { FunctionComponent } from 'react';
 import styles from '../styles/ContactSection.module.css';
 import ContactForm from './ContactForm';
 import TriangleSeparator from './TriangleSeparator';
-import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa/';
 import SocialGrid from './SocialGrid';
 
 type ContactSectionProps = {

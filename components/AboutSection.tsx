@@ -29,7 +29,19 @@ const AboutSection: FunctionComponent<AboutSectionProps> = ({
             Engineering.
           </p>
         </div>
-        <LineSeparator width=".3rem" height="23rem" color="var(--main-color)" />
+
+        <LineSeparator
+          width=".3rem"
+          height="23rem"
+          color="var(--main-color)"
+          className={styles.verticalBar}
+        />
+        <LineSeparator
+          width="24rem"
+          height=".3rem"
+          color="var(--main-color)"
+          className={styles.horizontalBar}
+        />
 
         <p>
           On my journey I've learned some languages like python and the orion

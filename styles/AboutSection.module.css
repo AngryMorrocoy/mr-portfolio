@@ -44,3 +44,27 @@
   font-size: 2.25rem;
   line-height: 1.4;
 }
+
+/* Bars */
+
+.horizontalBar {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .aboutSection__info{
+    grid-template-columns: 100%;
+  }
+
+  .verticalBar {
+    display: none;
+  }
+
+  .horizontalBar {
+    display: block;
+  }
+
+  .aboutSection__info p {
+    text-align: center;
+  }
+}

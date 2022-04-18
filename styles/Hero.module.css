@@ -7,7 +7,6 @@
 }
 
 .description {
-  /* background-color: red; */
   padding: 2rem;
   text-align: left;
 }
@@ -23,6 +22,21 @@
 }
 
 .imageContainer {
-  width: 40rem;
+  max-width: 40rem;
+  width: 50%;
   height: auto;
+}
+
+.imageContainer > * {
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .description {
+    text-align: center;
+  }
 }

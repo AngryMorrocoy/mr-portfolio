@@ -18,3 +18,10 @@
   grid-gap: 2rem;
   grid-template-columns: repeat(2, 50%);
 }
+
+@media screen and (max-width: 600px) {
+  .contactGrid {
+    grid-template-columns: 100%;
+    gap: 8rem;
+  }
+}

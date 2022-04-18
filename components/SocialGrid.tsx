@@ -1,19 +1,19 @@
 import { FunctionComponent } from 'react';
 import styles from '../styles/SocialGrid.module.css';
-import { FaLinkedin, FaTwitter, FaGithub } from 'react-icons/fa/';
+import { FaLinkedin, FaGithub } from 'react-icons/fa/';
 
 const SocialGrid: FunctionComponent<{}> = ({}): JSX.Element => {
+  const githubLink = 'https://github.com/AngryMorrocoy/';
+  const linkedinLink = 'https://www.linkedin.com/in/manuel-rivas-21740b223/';
+
   return (
     <div className={styles.socialGrid}>
-      <div className={styles.iconContainer}>
+      <a href={linkedinLink} target="_blank" className={styles.iconContainer}>
         <FaLinkedin />
-      </div>
-      <div className={styles.iconContainer}>
-        <FaTwitter />
-      </div>
-      <div className={styles.iconContainer}>
+      </a>
+      <a href={githubLink} target="_blank" className={styles.iconContainer}>
         <FaGithub />
-      </div>
+      </a>
     </div>
   );
 };
