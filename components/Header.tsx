@@ -25,8 +25,10 @@ const Navbar: FunctionComponent<any> = ({}): JSX.Element => {
         <ul className={styles.navbar}>
           {navLinksText.map((navItemData, idx) => {
             return (
-              <li className={styles.navLink} key={idx}>
-                <Link href={navItemData.href}>{navItemData.title}</Link>
+              <li className={styles.navItem} key={idx}>
+                <Link href={navItemData.href} passHref>
+                  <a className={styles.navLink}>{navItemData.title}</a>
+                </Link>
               </li>
             );
           })}
