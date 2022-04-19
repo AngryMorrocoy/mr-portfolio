@@ -11,7 +11,7 @@ const AboutSection: FunctionComponent<AboutSectionProps> = ({
   id = '',
 }): JSX.Element => {
   return (
-    <div id={id} className={styles.aboutSection}>
+    <section id={id} className={styles.aboutSection}>
       <div className={styles.topSeparators}>
         <TriangleSeparator reversed />
         <TriangleSeparator reversed />
@@ -52,7 +52,7 @@ const AboutSection: FunctionComponent<AboutSectionProps> = ({
       <div className={styles.botSeparators}>
         <TriangleSeparator />
       </div>
-    </div>
+    </section>
   );
 };
 

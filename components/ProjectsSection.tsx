@@ -12,7 +12,7 @@ const ProjectsSection: FunctionComponent<ProjectsSectionProps> = ({
   id = '',
 }): JSX.Element => {
   return (
-    <div id={id} className={styles.projectsSection}>
+    <section id={id} className={styles.projectsSection}>
       <h2 className="section-title">Projects</h2>
       <div className={styles.projectsContainer}>
         {projectObjects.map((cardProps, idx, array) => {
@@ -37,7 +37,7 @@ const ProjectsSection: FunctionComponent<ProjectsSectionProps> = ({
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

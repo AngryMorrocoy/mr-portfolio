@@ -18,16 +18,16 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({
   className,
 }): JSX.Element => {
   return (
-    <div className={`${styles.projectCard} ${className}`}>
-      <a href={href} target="_blank">
-        <div className={styles.imageContainer}>
-          <Image src={image} layout="fill" />
-        </div>
-        <span className={`${styles.badge} ${styles[aligned]}`}>
-          {badgeText}
-        </span>
-      </a>
-    </div>
+    <a
+      className={`${styles.projectCard} ${className}`}
+      href={href}
+      target="_blank"
+    >
+      <div className={styles.imageContainer}>
+        <Image src={image} layout="fill" />
+      </div>
+      <span className={`${styles.badge} ${styles[aligned]}`}>{badgeText}</span>
+    </a>
   );
 };
 
