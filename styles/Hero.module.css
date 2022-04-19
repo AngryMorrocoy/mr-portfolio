@@ -18,6 +18,7 @@
 
 .remarkName {
   font-size: inherit;
+  font-family: 'Courgette', cursive;
   color: var(--main-color);
 }
 
