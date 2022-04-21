@@ -1,0 +1,8 @@
+POST localhost:3000/api/send_mail
+Content-Type: application/json
+
+{
+    "name": "Pedro Oropeza",
+    "email": "manuelrivas@gmail.com",
+    "message": "Hola mucho gusto\n Me encantó la página jijijaja."
+}
