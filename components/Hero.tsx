@@ -12,7 +12,7 @@ const Hero: FunctionComponent<HeroProps> = ({ id = '' }): JSX.Element => {
     <section id={id} className={styles.hero}>
       <div className={styles.description}>
         <p>
-          Hi, I'm <span className={styles.remarkName}>Manuel Rivas.</span>
+          Hi, I&apos;m <span className={styles.remarkName}>Manuel Rivas.</span>
         </p>
         <p>Web Developer.</p>
       </div>

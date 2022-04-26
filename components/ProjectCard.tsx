@@ -22,6 +22,7 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({
       className={`${styles.projectCard} ${className}`}
       href={href}
       target="_blank"
+      rel="noreferrer"
     >
       <div className={styles.imageContainer}>
         <Image src={image} layout="fill" />

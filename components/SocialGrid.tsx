@@ -8,10 +8,10 @@ const SocialGrid: FunctionComponent<{}> = ({}): JSX.Element => {
 
   return (
     <div className={styles.socialGrid}>
-      <a href={linkedinLink} target="_blank" className={styles.iconContainer}>
+      <a href={linkedinLink} target="_blank" rel="noreferrer" className={styles.iconContainer}>
         <FaLinkedin />
       </a>
-      <a href={githubLink} target="_blank" className={styles.iconContainer}>
+      <a href={githubLink} target="_blank" rel="noreferrer" className={styles.iconContainer}>
         <FaGithub />
       </a>
     </div>

@@ -44,7 +44,7 @@ const AboutSection: FunctionComponent<AboutSectionProps> = ({
         />
 
         <p>
-          On my journey I've learned some languages like python and the orion
+          On my journey I&apos;ve learned some languages like python and the orion
           belt of web development: <i>HTML, CSS and Javascript</i>. Working with
           the last one in both, the frontend and the backend using nodeJS.
         </p>
