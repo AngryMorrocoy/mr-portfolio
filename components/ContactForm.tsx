@@ -21,6 +21,21 @@ const ContactForm: FunctionComponent<any> = ({}): JSX.Element => {
     <form
       className={styles.formContainer}
       onSubmit={handleSubmit((formValues) => {
+        fetch('/api/send_email/', {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          method: 'POST',
+          body: JSON.stringify(formValues),
+        }).then((v) => {
+          if (v.status === 200) {
+            resetField('name');
+            resetField('email');
+            resetField('message');
+            alert('Succesfuly sent message!');
+            return
+          }
+        });
       })}
     >
       <TextInput
