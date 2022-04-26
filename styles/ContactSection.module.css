@@ -19,7 +19,7 @@
   grid-template-columns: repeat(2, 50%);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .contactGrid {
     grid-template-columns: 100%;
     gap: 8rem;
