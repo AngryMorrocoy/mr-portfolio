@@ -7,7 +7,7 @@ export default async function handler(
 ) {
   if (req.method !== 'POST') {
     return res
-      .status(404)
+      .status(400)
       .json({ error: 'You should only post to this route.' });
   }
 
