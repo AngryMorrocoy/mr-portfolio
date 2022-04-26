@@ -20,11 +20,7 @@ const ContactForm: FunctionComponent<any> = ({}): JSX.Element => {
   return (
     <form
       className={styles.formContainer}
-      onSubmit={handleSubmit((evt) => {
-        resetField('name');
-        resetField('email');
-        resetField('message');
-        console.log(evt);
+      onSubmit={handleSubmit((formValues) => {
       })}
     >
       <TextInput
